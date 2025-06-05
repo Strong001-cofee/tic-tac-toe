@@ -285,10 +285,30 @@
           max-width: 250px;
         }
 
-        .mode-btn,
+        .mode-btn {
+          width: 100%;
+        }
+
         .control-btn {
-          width: 300px;
-          max-width: 400px;
+          width: auto;
+          min-width: 120px;
+        }
+      }
+      @media (max-width: 480px) {
+        /* ... existing mobile styles ... */
+
+        .board-5x5,
+        .board-6x6 {
+          max-width: 100%;
+          padding: 10px;
+        }
+
+        .board-5x5 .cell {
+          min-height: 45px;
+        }
+
+        .board-6x6 .cell {
+          min-height: 36px;
         }
       }
     </style>
